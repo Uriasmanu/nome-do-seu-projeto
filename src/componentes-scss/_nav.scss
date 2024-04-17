@@ -1,0 +1,49 @@
+body{
+  margin: 0 !important;
+
+}
+
+nav{
+  height: 100vh;
+  width: 15%;
+  box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.3);
+
+
+  .titulo{
+    background: linear-gradient(to bottom right, #FFB354, #EE7A3A);
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  ul{
+    padding: 0;
+  }
+
+  li {
+    list-style: none;
+    font-size: 1rem;
+    padding: 5%;
+    border-bottom: #E7E7E7 solid 3px;
+    color: #725C5C;
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+      background: #FDF1EB;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 4px;
+        background: linear-gradient(to bottom, #FFB354, #EE7A3A); /* Alterado para linear vertical */
+      }
+    }
+  }
+
+
+}

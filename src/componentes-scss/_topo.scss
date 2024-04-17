@@ -1,0 +1,42 @@
+.topo{
+  background: #FDF1EB;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  color: #725C5C;
+
+  .textos{
+    padding: 0 3%;
+    font-size: 16px;
+    margin-right: 23%;
+
+  }
+    .textos p:nth-child(2) {
+      font-weight: 600;
+      font-size: 22px;
+    }
+
+    .language{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      border: #CCCCCC solid 2px;
+      height: 30px;
+      width: 80px;
+      margin-right: 3%;
+    }
+
+    .bem-vindo{
+      display: flex;
+      text-align: right;
+
+      img{
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        margin-left: 5%;
+      }
+
+    }
+
+}
