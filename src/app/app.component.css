@@ -5,7 +5,7 @@ body {
 
 nav {
   height: 100vh;
-  width: 15%;
+  width: 300px;
   box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.3);
 }
 nav .titulo {
@@ -74,6 +74,30 @@ nav li:hover::before {
   height: 35px;
   width: 35px;
   margin-left: 5%;
+}
+
+.text-box {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.text {
+  height: 100px; /* Defina a altura desejada para exibir a metade do texto */
+  overflow: hidden;
+}
+
+.read-more-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
 }
 
 :host {
