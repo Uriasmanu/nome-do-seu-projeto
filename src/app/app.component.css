@@ -83,7 +83,7 @@ main {
 .comeco {
   display: flex;
   align-items: center;
-  width: 98%;
+  width: 100%;
   justify-content: space-between;
 }
 .comeco h3 {
@@ -99,10 +99,16 @@ main {
   display: flex;
   height: 35px;
   border-radius: 5px;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  width: 40px;
+  display: flex;
+  justify-content: center;
 }
 .comeco .divisao {
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 .comeco .divisao h4 {
   color: #ED7839;
@@ -114,7 +120,7 @@ main {
   margin-top: 15%;
 }
 .comeco .botoes button:nth-child(1) {
-  width: 130px;
+  width: 150px;
   display: flex;
   justify-content: center;
 }
@@ -141,6 +147,32 @@ main {
 
 .read-more-btn:hover {
   background-color: #0056b3;
+}
+
+.banner {
+  width: 70%;
+}
+.banner .container {
+  position: relative;
+  background-color: rgba(141, 53, 6, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.banner .container img {
+  width: 100%;
+  opacity: 37%;
+}
+.banner .texto-sobre-imagem {
+  position: absolute;
+  top: 32%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 22px;
+  font-weight: bold;
+  z-index: 2;
+  width: 41%;
 }
 
 :host {
