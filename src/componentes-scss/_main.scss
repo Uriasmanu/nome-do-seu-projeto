@@ -1,3 +1,52 @@
+main{
+  margin: 0% 5%;
+}
+.comeco{
+  display: flex;
+  align-items: center;
+  width: 98%;
+  justify-content: space-between;
+
+  h3{
+    color: #ED7839;
+    font-size: 1.6rem;
+    width: 60%;
+  }
+  button{
+    background: #ED7839;
+    border: #ED7839;
+    color: #fff;
+    align-items: center;
+    display: flex;
+    height: 35px;
+    border-radius: 5px;
+    font-size: 1rem;
+
+  }
+  .divisao{
+    width: 400px;
+    h4{
+      color: #ED7839;
+      font-size: 0.9rem;
+    }
+  }
+
+  .botoes{
+    display: flex;
+    gap: 2%;
+    margin-top: 15%;
+
+  }
+
+  .botoes button:nth-child(1) {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+
+  }
+
+}
+
 .text-box {
 
   margin: 0 auto;
