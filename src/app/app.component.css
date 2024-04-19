@@ -1,9 +1,4 @@
 @charset "UTF-8";
-body {
-  margin: 0 !important;
-  height: 100vh;
-}
-
 nav {
   height: 100vh;
   width: 300px;
@@ -80,6 +75,7 @@ nav li:hover::before {
 main {
   margin: 0% 5%;
   height: 100vh;
+  box-sizing: border-box;
 }
 
 .comeco {
@@ -89,13 +85,13 @@ main {
   justify-content: space-between;
 }
 .comeco h3 {
-  color: #ED7839;
+  color: #ed7839;
   font-size: 1.6rem;
   width: 60%;
 }
 .comeco button {
-  background: #ED7839;
-  border: #ED7839;
+  background: #ed7839;
+  border: #ed7839;
   color: #fff;
   align-items: center;
   display: flex;
@@ -113,7 +109,7 @@ main {
   align-items: flex-end;
 }
 .comeco .divisao h4 {
-  color: #ED7839;
+  color: #ed7839;
   font-size: 0.9rem;
 }
 .comeco .botoes {
@@ -170,22 +166,22 @@ main {
 }
 .banner .container2 .texto-2-sobre-imagem img {
   border-radius: 50%;
-  border: 3px solid #ED7839;
+  border: 3px solid #ed7839;
 }
 .banner .detalhes {
   width: 20%;
   height: auto;
-  border: solid 1px #ECECEC;
+  border: solid 1px #ececec;
 }
 .banner .detalhes h3 {
-  background: #FDF1EB;
+  background: #fdf1eb;
   padding: 5%;
   font-weight: 600;
   margin: 0%;
 }
 .banner .detalhes .texto {
   padding: 5%;
-  color: #5C5C5C;
+  color: #5c5c5c;
   font-weight: 100;
   display: flex;
   flex-direction: column;
@@ -202,20 +198,23 @@ main {
   margin-top: 1%;
 }
 .mainn h3 {
-  color: #4E4E4E;
-  background: #FDF1EB;
+  color: #4e4e4e;
+  background: #fdf1eb;
   width: 100%;
   padding: 1%;
   margin: 0;
 }
+.mainn h4 {
+  color: #ed7839;
+}
 .mainn .text-box {
-  border: solid 1px #ECECEC;
+  border: solid 1px #ececec;
   margin: 0 auto;
   overflow: hidden;
   margin-bottom: 5%;
 }
 .mainn .text {
-  height: 100px; /* Defina a altura desejada para exibir a metade do texto */
+  height: 100px;
   overflow: hidden;
 }
 .mainn .read-more-btn {
@@ -225,7 +224,59 @@ main {
   position: relative;
   left: 91%;
   background: none;
-  color: #ED7839;
+  color: #ed7839;
+}
+
+.discussoes {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: #ececec solid 1px;
+  align-items: center;
+  height: auto;
+}
+.discussoes h3 {
+  width: 98%;
+  text-align: start;
+}
+.discussoes .container-disc {
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 3%;
+}
+.discussoes h4 {
+  font-size: 18px;
+}
+.discussoes .imagens {
+  display: flex;
+  gap: 50px;
+}
+.discussoes p {
+  width: 60%;
+}
+.discussoes .linha {
+  width: 100%;
+  border: #ececec solid 1px;
+  margin-top: 2%;
+}
+.discussoes button {
+  display: flex;
+  background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 35px;
+  width: 110px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  position: relative;
+  top: -41px;
 }
 
 :host {

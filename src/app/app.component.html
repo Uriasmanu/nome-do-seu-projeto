@@ -120,7 +120,8 @@
 
         <div class="text-box" (click)="toggleText()">
           <h3>Resumo</h3>
-          <div [style.height]="textBoxHeight" style="display: flex; flex-direction: column; gap: 40px; padding: 1%;; font-size: 20px;">
+          <div [style.height]="textBoxHeight"
+            style="display: flex; flex-direction: column; gap: 40px; padding: 1%;; font-size: 20px;">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae turpis auctor, mollis felis ut,
               commodo turpis. Phasellus felis mauris, egestas eget cursus et, iaculis quis lacus. Fusce auctor eros
@@ -132,7 +133,8 @@
             <p>
               Fusce vitae luctus dui. Donec id euismod mauris, in volutpat urna. Proin dapibus consequat feugiat.
               Proin dictum justo arcu, quis vestibulum augue lacinia quis. Sed dignissim dui nulla, ut faucibus mauris
-              sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis. Etiam
+              sodales id. Aliquam erat volutpat. Maecenas dolor enim, tincidunt id elit non, suscipit interdum turpis.
+              Etiam
               finibus urna libero, eget interdum eros volutpat ullamcorper. Pellentesque et pretium lorem. Aenean
               interdum quis diam ac porttitor. Cras nec ipsum pulvinar, pharetra libero non, ornare enim. Etiam in
               laoreet odio.
@@ -142,7 +144,8 @@
               Nam eget tristique elit, at fermentum tellus. Mauris scelerisque ligula id eleifend feugiat. Donec
               eleifend vehicula sem nec dapibus. Integer scelerisque neque dui, in lacinia erat molestie eu. Phasellus
               maximus dui eget lacus porta tempor. Ut ex nibh, dignissim quis purus semper, efficitur facilisis
-              turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis consectetur
+              turpis. Praesent blandit elementum ultricies. Aliquam sit amet enim sit amet nulla pulvinar lobortis
+              consectetur
               non odio. Phasellus at lacus hendrerit, vulputate nisi sit amet, viverra mauris. Etiam eu scelerisque
               orci. Quisque sagittis, mi vitae pharetra iaculis, orci elit eleifend massa, eu posuere mauris odio id
               odio. Morbi eu libero luctus, consectetur lorem vel, interdum sapien. Aenean in porta arcu. Maecenas eu
@@ -159,23 +162,26 @@
           </div>
           <button class="read-more-btn">{{ buttonText }}</button>
         </div>
+        <section class="discussoes">
+          <h3>Discussões</h3>
+          <div class="container-disc">
+            <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
+            <div class="imagens">
+              <img src="../assets/mao.svg" alt="">
+              <img src="../assets/QA.svg" alt="">
+              <img src="../assets/pessoas.svg" alt="">
+            </div>
+            <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus
+              questionamentos
+              ou
+              sugestões para o autor!</p>
 
-        <h3>O elemento de criar tópico precisa ter a classe .btn-create-topic</h3>
-
-        Discussões
-
-        Compartilhe suas ideias ou dúvidas com os autores!
-
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-
-        Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos
-        ou
-        sugestões para o autor!
-        <button>criar tópico</button>
-        <a href="#" class="btn-create-topic">criar tópico</a>
-
+            <div class="linha"></div>
+            <button class="btn-create-topic">
+              <img src="../assets/icon - criar.svg" alt="">
+              criar tópico</button>
+          </div>
+        </section>
         <h3>O card que contém um tópico respondido precisa ter a classe .answered-topic, o assunto do tópico deve ter a
           classe .ops-topic-subject</h3>
         <div class="answered-topic">
