@@ -217,7 +217,6 @@ main {
 .mainn .text {
   height: 100px; /* Defina a altura desejada para exibir a metade do texto */
   overflow: hidden;
-  padding: 2%;
 }
 .mainn .read-more-btn {
   color: #fff;
