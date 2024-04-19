@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
+import { ComentarioComponent } from './comentario/comentario.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
+  imports: [ComentarioComponent],
 })
 export class AppComponent {
   title = 'Exercicio 2024';
