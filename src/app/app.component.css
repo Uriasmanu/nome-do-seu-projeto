@@ -1,20 +1,19 @@
 @charset "UTF-8";
-nav {
-  height: 100vh;
+.nav {
   width: 300px;
   box-shadow: 0 4px 6px 6px rgba(0, 0, 0, 0.3);
 }
-nav .titulo {
+.nav .titulo {
   background: linear-gradient(to bottom right, #FFB354, #EE7A3A);
   color: white;
   padding: 1%;
   text-align: center;
   font-size: 1.2rem;
 }
-nav ul {
+.nav ul {
   padding: 0;
 }
-nav li {
+.nav li {
   list-style: none;
   font-size: 1rem;
   padding: 5%;
@@ -22,11 +21,11 @@ nav li {
   color: #725C5C;
   position: relative;
 }
-nav li:hover {
+.nav li:hover {
   cursor: pointer;
   background: #FDF1EB;
 }
-nav li:hover::before {
+.nav li:hover::before {
   content: "";
   position: absolute;
   top: 0;
@@ -37,11 +36,13 @@ nav li:hover::before {
 }
 
 .topo {
-  background: #FDF1EB;
-  width: 100%;
+  background: #fdf1eb;
+  width: 96%;
+  height: auto;
   display: flex;
   align-items: center;
-  color: #725C5C;
+  color: #725c5c;
+  padding: 1%;
 }
 .topo .textos {
   padding: 0 3%;
@@ -56,7 +57,7 @@ nav li:hover::before {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border: #CCCCCC solid 2px;
+  border: #cccccc solid 2px;
   height: 30px;
   width: 80px;
   margin-right: 3%;
@@ -64,6 +65,7 @@ nav li:hover::before {
 .topo .bem-vindo {
   display: flex;
   text-align: right;
+  margin-right: 2%;
 }
 .topo .bem-vindo img {
   border-radius: 50%;
@@ -74,7 +76,6 @@ nav li:hover::before {
 
 main {
   margin: 0% 5%;
-  height: 100vh;
   box-sizing: border-box;
 }
 
@@ -279,6 +280,21 @@ main {
   top: -41px;
 }
 
+.card {
+  border: solid 1px #E7E7E7;
+  padding: 2%;
+}
+.card h4, .card h5 {
+  margin: 0;
+}
+.card div {
+  display: flex;
+  width: 30%;
+  gap: 10px;
+  align-items: center;
+  margin-top: 2%;
+}
+
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
@@ -291,6 +307,12 @@ main {
 body {
   margin: 0 !important;
   height: 100vh;
+}
+
+.required-elements {
+  display: flex;
+  height: auto;
+  box-sizing: border-box;
 }
 
 p {
@@ -336,94 +358,6 @@ p {
 .content {
   display: flex;
   width: 100vw;
-}
-
-svg.material-icons {
-  height: 24px;
-  width: auto;
-}
-
-svg.material-icons:not(:last-child) {
-  margin-right: 8px;
-}
-
-.card svg.material-icons path {
-  fill: #888;
-}
-
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 16px;
-}
-
-.card {
-  all: unset;
-  border-radius: 4px;
-  border: 1px solid #eee;
-  background-color: #fafafa;
-  height: 40px;
-  width: 200px;
-  margin: 0 8px 16px;
-  padding: 16px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  line-height: 24px;
-}
-
-.card-container .card:not(:last-child) {
-  margin-right: 0;
-}
-
-.card.card-small {
-  height: 16px;
-  width: 168px;
-}
-
-.card-container .card:not(.highlight-card) {
-  cursor: pointer;
-}
-
-.card-container .card:not(.highlight-card):hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-}
-
-.card-container .card:not(.highlight-card):hover .material-icons path {
-  fill: rgb(105, 103, 103);
-}
-
-.card.highlight-card {
-  background-color: #1976d2;
-  color: white;
-  font-weight: 600;
-  border: none;
-  width: auto;
-  min-width: 30%;
-  position: relative;
-}
-
-.card.card.highlight-card span {
-  margin-left: 60px;
-}
-
-svg#rocket {
-  width: 80px;
-  position: absolute;
-  left: -10px;
-  top: -24px;
-}
-
-svg#rocket-smoke {
-  height: calc(100vh - 95px);
-  position: absolute;
-  top: 10px;
-  right: 180px;
-  z-index: -10;
 }
 
 a,
