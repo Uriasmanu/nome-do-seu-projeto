@@ -127,30 +127,6 @@ main {
   justify-content: center;
 }
 
-.text-box {
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.text {
-  height: 100px; /* Defina a altura desejada para exibir a metade do texto */
-  overflow: hidden;
-}
-
-.read-more-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-top: 10px;
-  cursor: pointer;
-  position: absolute;
-}
-
-.read-more-btn:hover {
-  background-color: #0056b3;
-}
-
 .banner {
   width: 100%;
   display: flex;
@@ -181,7 +157,7 @@ main {
 }
 .banner .container2 .texto-2-sobre-imagem {
   position: absolute;
-  top: 75%;
+  top: 70%;
   left: 43%;
   transform: translate(-50%, -50%);
   color: #fff;
@@ -220,6 +196,37 @@ main {
 .banner .detalhes .texto .fisicos {
   font-size: 18px;
   font-weight: 300;
+}
+
+.mainn {
+  margin-top: 1%;
+}
+.mainn h3 {
+  color: #4E4E4E;
+  background: #FDF1EB;
+  width: 100%;
+  padding: 1%;
+  margin: 0;
+}
+.mainn .text-box {
+  border: solid 1px #ECECEC;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 5%;
+}
+.mainn .text {
+  height: 100px; /* Defina a altura desejada para exibir a metade do texto */
+  overflow: hidden;
+  padding: 2%;
+}
+.mainn .read-more-btn {
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  position: relative;
+  left: 91%;
+  background: none;
+  color: #ED7839;
 }
 
 :host {
