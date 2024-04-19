@@ -1,6 +1,7 @@
 @charset "UTF-8";
 body {
   margin: 0 !important;
+  height: 100vh;
 }
 
 nav {
@@ -78,6 +79,7 @@ nav li:hover::before {
 
 main {
   margin: 0% 5%;
+  height: 100vh;
 }
 
 .comeco {
@@ -150,29 +152,74 @@ main {
 }
 
 .banner {
-  width: 70%;
-}
-.banner .container {
-  position: relative;
-  background-color: rgba(141, 53, 6, 0.5);
   width: 100%;
-  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.banner .container2 {
+  position: relative;
+  width: auto;
   z-index: 1;
 }
-.banner .container img {
+.banner .container2 .container {
+  background-color: rgba(141, 53, 6, 0.5);
+}
+.banner .container2 .container img {
   width: 100%;
   opacity: 37%;
 }
-.banner .texto-sobre-imagem {
+.banner .container2 .texto-sobre-imagem {
   position: absolute;
-  top: 32%;
+  top: 12%;
   left: 43%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 22px;
   font-weight: bold;
-  z-index: 2;
-  width: 41%;
+  z-index: 3;
+  width: 80%;
+}
+.banner .container2 .texto-2-sobre-imagem {
+  position: absolute;
+  top: 75%;
+  left: 43%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+  z-index: 3;
+  width: 80%;
+  display: flex;
+  gap: 5%;
+}
+.banner .container2 .texto-2-sobre-imagem img {
+  border-radius: 50%;
+  border: 3px solid #ED7839;
+}
+.banner .detalhes {
+  width: 20%;
+  height: auto;
+  border: solid 1px #ECECEC;
+}
+.banner .detalhes h3 {
+  background: #FDF1EB;
+  padding: 5%;
+  font-weight: 600;
+  margin: 0%;
+}
+.banner .detalhes .texto {
+  padding: 5%;
+  color: #5C5C5C;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: auto;
+  list-style: none;
+}
+.banner .detalhes .texto .fisicos {
+  font-size: 18px;
+  font-weight: 300;
 }
 
 :host {
@@ -186,6 +233,7 @@ main {
 
 body {
   margin: 0 !important;
+  height: 100vh;
 }
 
 p {
@@ -365,26 +413,6 @@ a:hover {
   margin: 0;
 }
 
-footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
-}
-
-footer a {
-  display: flex;
-  align-items: center;
-}
-
-svg#clouds {
-  position: fixed;
-  bottom: -160px;
-  left: -230px;
-  z-index: -10;
-  width: 1920px;
-}
-
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .card-container > *:not(.circle-link),
@@ -408,13 +436,4 @@ svg#clouds {
     display: none;
     visibility: hidden;
   }
-}
-#required-elements {
-  width: 100%;
-}
-#required-elements h3 {
-  margin-top: 15px;
-}
-#required-elements h2, #required-elements a {
-  font-size: 12px;
 }/*# sourceMappingURL=app.component.css.map */
