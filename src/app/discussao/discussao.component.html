@@ -10,7 +10,7 @@
     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos
       ou sugestões para o autor!</p>
     <div class="linha"></div>
-    <button (click)="toggleTopicForm()">Criar tópico</button>
+    <button  (click)="toggleTopicForm()">Criar tópico</button>
   </div>
 </section>
 
@@ -21,7 +21,7 @@
     (input)="updateSubject($event)">
   <label for="content">Conteúdo:</label>
   <input type="text" id="content" (input)="updateContent($event)">
-  <div>
+  <div class="div-button">
     <button type="submit">Enviar</button>
   </div>
 </form>

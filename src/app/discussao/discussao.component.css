@@ -35,10 +35,25 @@ button {
   color: #fff;
   border-radius: 5px;
   height: 35px;
-  width: 110px;
+  width: 150px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   font-size: 15px;
+}
+
+.buton {
+  display: flex;
+  background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  position: relative;
+  top: -42px;
 }
 
 .coments {
@@ -71,4 +86,11 @@ form input {
 }
 form #content {
   height: 78px;
+}
+form .div-button {
+  display: flex;
+  width: 100%;
+  height: auto;
+  background: #CCCCCC;
+  justify-content: flex-end;
 }/*# sourceMappingURL=discussao.component.css.map */
