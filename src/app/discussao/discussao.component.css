@@ -111,13 +111,21 @@ form .div-button {
   font-weight: 600;
   margin: 0;
 }
+.topco-Resp p {
+  color: #595959;
+}
 .topco-Resp h5 {
-  color: #ed7839;
+  color: #F48F44;
   font-size: 15px;
   margin: 0;
+  font-weight: 100;
 }
 .topco-Resp h6 {
   color: #707070;
+  font-size: 15px;
+}
+.topco-Resp .linha-butto {
+  width: 100%;
 }
 .topco-Resp .butonn {
   display: flex;
@@ -132,4 +140,8 @@ form .div-button {
   font-size: 15px;
   position: relative;
   top: -19px;
+  left: 43%;
+}
+.topco-Resp .responsta {
+  background: #707070;
 }/*# sourceMappingURL=discussao.component.css.map */
