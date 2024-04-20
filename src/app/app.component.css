@@ -205,9 +205,6 @@ main {
   padding: 1%;
   margin: 0;
 }
-.mainn h4 {
-  color: #ed7839;
-}
 .mainn .text-box {
   border: solid 1px #ececec;
   margin: 0 auto;
@@ -228,66 +225,6 @@ main {
   color: #ed7839;
 }
 
-.discussoes {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  border: #ececec solid 1px;
-  align-items: center;
-  height: auto;
-  margin-bottom: 5%;
-}
-.discussoes h3 {
-  width: 98%;
-  text-align: start;
-}
-.discussoes .container-disc {
-  box-sizing: border-box;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  gap: 20px;
-  padding: 3%;
-}
-.discussoes h4 {
-  font-size: 18px;
-}
-.discussoes .imagens {
-  display: flex;
-  gap: 50px;
-}
-.discussoes p {
-  width: 60%;
-}
-.discussoes .linha {
-  width: 100%;
-  border: #ececec solid 1px;
-  margin-top: 2%;
-}
-.discussoes button {
-  display: flex;
-  background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
-  border: none;
-  color: #fff;
-  border-radius: 5px;
-  height: 35px;
-  width: 110px;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 15px;
-  position: relative;
-  top: -41px;
-}
-
-.coments {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 85%;
-}
-
 .capsula {
   padding: 2%;
 }
@@ -302,11 +239,6 @@ main {
   flex-direction: column;
   gap: 20px;
   overflow: hidden;
-}
-.card h4,
-.card h5 {
-  margin: 0;
-  color: #ed7839;
 }
 .card p {
   width: 78%;
@@ -383,6 +315,12 @@ body {
 
 p {
   margin: 0;
+}
+
+h4,
+h5 {
+  margin: 0;
+  color: #ed7839;
 }
 
 .spacer {

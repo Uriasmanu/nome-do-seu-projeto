@@ -17,7 +17,7 @@ export class ComentarioComponent {
       this.textBoxHeight = 'auto';
 
     } else {
-      this.textBoxHeight = '150px';
+      this.textBoxHeight = '170px';
 
     }
   }
