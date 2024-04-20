@@ -93,4 +93,18 @@ form .div-button {
   height: auto;
   background: #CCCCCC;
   justify-content: flex-end;
+}
+
+.topco-Resp {
+  height: 100%;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  align-items: center;
+}
+.topco-Resp h4 {
+  color: #ed7839;
+  font-size: 18px;
+  font-weight: 600;
 }/*# sourceMappingURL=discussao.component.css.map */

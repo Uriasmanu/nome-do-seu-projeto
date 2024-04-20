@@ -10,11 +10,14 @@ import { Component } from '@angular/core';
 })
 export class DiscussaoComponent {
   showTopicForm: boolean = false;
+  showTopcoResp: boolean = false;
   topicSubject: string = '';
   topicContent: string = '';
 
   toggleTopicForm() {
     this.showTopicForm = !this.showTopicForm;
+    // Resetar a exibição de topco-Resp quando o formulário é alternado
+    this.showTopcoResp = false;
   }
 
   updateSubject(event: Event) {
@@ -31,6 +34,12 @@ export class DiscussaoComponent {
     // Aqui você pode adicionar lógica para lidar com o envio do tópico
     console.log('Assunto:', this.topicSubject);
     console.log('Conteúdo:', this.topicContent);
+
+    // Após o envio, exibir topco-Resp e iniciar temporizador para ocultá-lo após 5 segundos
+    this.showTopcoResp = true;
+    setTimeout(() => {
+      this.showTopcoResp = false;
+    }, 5000000);
 
     // Após o envio, ocultar o formulário novamente
     this.showTopicForm = false;

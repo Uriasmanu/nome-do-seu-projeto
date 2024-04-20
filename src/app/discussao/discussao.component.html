@@ -1,4 +1,4 @@
-<section *ngIf="!showTopicForm" class="discussoes">
+<section *ngIf="!showTopicForm && !showTopcoResp" class="discussoes">
 
   <div class="container-disc">
     <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
@@ -10,7 +10,7 @@
     <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos
       ou sugestões para o autor!</p>
     <div class="linha"></div>
-    <button  (click)="toggleTopicForm()">Criar tópico</button>
+    <button class="buton" (click)="toggleTopicForm()">Criar tópico</button>
   </div>
 </section>
 
@@ -25,3 +25,18 @@
     <button type="submit">Enviar</button>
   </div>
 </form>
+
+
+<div class="topco-Resp" *ngIf="showTopcoResp">
+  <h4>Seu tópico foi enviado com sucesso! :D</h4>
+  <p>Agradecemos por sua contribuição, uma notificação será enviada ao seu email assim que seu tópico for respondido!
+  </p>
+  <h5>Descubra outros trabalhos!</h5>
+  <div class="linha"></div>
+  <button class="butonn" (click)="toggleTopicForm()">Criar tópico</button>
+  <div class="resposta">
+    <h6>Aguardando feedback dos autores</h6>
+    <img src="../../assets/2.svg" alt="">
+    <h5>Editar topico</h5>
+  </div>
+</div>
