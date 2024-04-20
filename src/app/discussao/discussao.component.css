@@ -102,9 +102,34 @@ form .div-button {
   flex-direction: column;
   margin-bottom: 5%;
   align-items: center;
+  padding: 1%;
+  text-align: center;
 }
 .topco-Resp h4 {
   color: #ed7839;
   font-size: 18px;
   font-weight: 600;
+  margin: 0;
+}
+.topco-Resp h5 {
+  color: #ed7839;
+  font-size: 15px;
+  margin: 0;
+}
+.topco-Resp h6 {
+  color: #707070;
+}
+.topco-Resp .buton {
+  display: flex;
+  background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 35px;
+  width: 150px;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  position: relative;
+  top: -19px;
 }/*# sourceMappingURL=discussao.component.css.map */
