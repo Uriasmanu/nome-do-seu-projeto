@@ -39,7 +39,7 @@ export class DiscussaoComponent {
     this.showTopcoResp = true;
     setTimeout(() => {
       this.showTopcoResp = false;
-    }, 5000);
+    }, 3000);
 
     // Após o envio, ocultar o formulário novamente
     this.showTopicForm = false;
