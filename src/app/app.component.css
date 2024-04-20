@@ -201,7 +201,7 @@ main {
 .mainn h3 {
   color: #4e4e4e;
   background: #fdf1eb;
-  width: 100%;
+  width: 98%;
   padding: 1%;
   margin: 0;
 }
@@ -223,6 +223,16 @@ main {
   left: 91%;
   background: none;
   color: #ed7839;
+}
+
+.discussoes {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  border: #ececec solid 1px;
+  align-items: center;
+  height: auto;
+  margin-bottom: 5%;
 }
 
 .capsula {

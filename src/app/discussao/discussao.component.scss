@@ -1,70 +1,78 @@
-.discussoes {
+.container-disc {
   box-sizing: border-box;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  border: #ececec solid 1px;
   align-items: center;
-  height: auto;
-  margin-bottom: 5%;
-
-  h3 {
-    width: 98%;
-    text-align: start;
-    color: #4e4e4e;
-    background: #fdf1eb;
-    padding: 1%;
-    margin: 0;
-  }
-
-
-  .container-disc {
-    box-sizing: border-box;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding: 3%;
-  }
-
-  h4 {
-    font-size: 18px;
-  }
-
-  .imagens {
-    display: flex;
-    gap: 50px;
-  }
-
-  p {
-    width: 60%;
-  }
-
-  .linha {
-    width: 100%;
-    border: #ececec solid 1px;
-    margin-top: 2%;
-  }
-
-  button {
-    display: flex;
-    background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
-    border: none;
-    color: #fff;
-    border-radius: 5px;
-    height: 35px;
-    width: 110px;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 15px;
-    position: relative;
-    top: -41px;
-  }
+  text-align: center;
+  gap: 20px;
+  padding: 3%;
 }
+
+h4 {
+  font-size: 18px;
+}
+
+.imagens {
+  display: flex;
+  gap: 50px;
+}
+
+p {
+  width: 60%;
+}
+
+.linha {
+  width: 100%;
+  border: #ececec solid 1px;
+  margin-top: 2%;
+}
+
+button {
+  display: flex;
+  background: linear-gradient(to bottom right, #ffb354, #ee7a3a);
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  height: 35px;
+  width: 110px;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+}
+
 .coments {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 85%;
+}
+
+form {
+  height: 100%;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+  gap: 10px;
+
+  p {
+    text-align: center;
+    width: 100%;
+  }
+
+  label {
+    color: #ed7839;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  input {
+    border: #cccccc solid 1px;
+    padding: 1%;
+  }
+
+  #content{
+    height: 78px;
+  }
 }

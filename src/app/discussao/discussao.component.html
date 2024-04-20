@@ -1,6 +1,5 @@
-
 <section *ngIf="!showTopicForm" class="discussoes">
-  <h3>Discussões</h3>
+
   <div class="container-disc">
     <h4>Compartilhe suas ideias ou dúvidas com os autores!</h4>
     <div class="imagens">
@@ -8,7 +7,8 @@
       <img src="../assets/QA.svg" alt="">
       <img src="../assets/pessoas.svg" alt="">
     </div>
-    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos ou sugestões para o autor!</p>
+    <p>Sabia que o maior estímulo no desenvolvimento científico e cultural é a curiosidade? Deixe seus questionamentos
+      ou sugestões para o autor!</p>
     <div class="linha"></div>
     <button (click)="toggleTopicForm()">Criar tópico</button>
   </div>
@@ -17,8 +17,11 @@
 <form *ngIf="showTopicForm" (submit)="submitTopic()">
   <p>Tem uma dúvida ou sugestão? Compartilhe seu feedback com os autores!</p>
   <label for="subject">Assunto:</label>
-  <input type="text" id="subject" class="subject" placeholder="Defina um tópico sucinto para notificar os autores..." (input)="updateSubject($event)">
+  <input type="text" id="subject" class="subject" placeholder="Defina um tópico sucinto para notificar os autores..."
+    (input)="updateSubject($event)">
   <label for="content">Conteúdo:</label>
   <input type="text" id="content" (input)="updateContent($event)">
-  <button type="submit">Enviar</button>
+  <div>
+    <button type="submit">Enviar</button>
+  </div>
 </form>
