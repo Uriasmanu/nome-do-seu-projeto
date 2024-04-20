@@ -110,8 +110,9 @@ form {
   flex-direction: column;
   margin-bottom: 5%;
   align-items: center;
-  padding: 1%;
+  padding: 2%;
   text-align: center;
+  gap: 10px;
 
   h4{
     color: #ed7839;
@@ -122,22 +123,26 @@ form {
 
 p{
   color: #595959;
+  margin: 0;
 }
 
-  h5{
+  a{
     color: #F48F44;
     font-size: 15px;
     margin: 0;
-    font-weight: 100;
-
+    font-weight: 300;
+    text-decoration-color: #F48F44;
+    text-decoration-style: solid;
   }
 
   h6{
     color: #707070;
     font-size: 15px;
+    margin: 0;
   }
   .linha-butto{
     width: 100%;
+    margin-top: 5%;
   }
 
   .butonn {
@@ -156,7 +161,13 @@ p{
       left: 43%;
   }
 
-  .responsta{
-    background: #707070;
+  .resposta{
+    background: #dddddd4d;
+    width: 100%;
+    height: auto;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 }
